@@ -1,0 +1,28 @@
+<h1>Welcome to the longest word-game!!</h1>
+
+<div class="grid">
+  <form action="/game" method="get">
+    <label for="grid">Enter a grid size:</label>
+    <br>
+    <input type="text" id="grid" name="grid_size" placeholder="input number">
+    <input type="submit" value="Go on!">
+  </form>
+
+<%= @grid %>
+
+  <form action="/score" method="get">
+    <label for="word">Guess a word:</label>
+    <br>
+    <input type="text" id="word" name="attempt" placeholder="input word">
+    <input type="submit" value="Go on!">
+  </form>
+
+  <% @start_time = Time.now %>
+
+<br>
+
+</div>
+
+<br>
+<br>
+<br>
